@@ -1,5 +1,7 @@
 libcal:
   version: 1.x
+  js:
+    js/libcal.js: {}
   css:
     theme:
       css/event-page.css: {}

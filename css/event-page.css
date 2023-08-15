@@ -41,8 +41,107 @@ body.node--type-event .node__content .field .field__label::after {
     margin: 0;
 }
 
+.block-views-blockworkshop-events-block-1 .list h3 a {
+    color:#c33a3a;
+    font-weight:600;
+}
+
 .block-views-blockworkshop-events-block-1 .list p{
     padding: 0;
     margin-bottom: 0;
     display: inline;
+}
+
+.libcal-date {
+    color:white;
+    background:#c33a3a;
+    float:left;
+    width:85px;
+    height:85px;
+    text-align:center;
+    margin-right:20px;
+    
+}
+.libcal-date .datetime {
+    margin:0 auto;
+    white-space: pre-line;
+    word-spacing: 100px;
+    font-weight:600;
+    line-height:1.2em;
+    margin-top:20%;
+    display:block;
+    font-size:1.2em;
+}
+.libcal-cal {
+    display:none;
+}
+.libcal-list, .libcal-cal-list {
+    margin-bottom:15px;
+    font-weight:600;
+    font-size:1.1em;
+}
+
+.view-workshop-events .list {
+    padding-bottom:15px !important;
+}
+
+.list.workshops h2 a {
+    font-size:.9em;
+    color:#c33a3a;
+
+}
+
+.view-workshop-events .views-label, .views-label-field-seats .views-label {
+    font-weight:bold;
+    display:inline;
+}
+
+.views-field-field-libcal-categories .field-content, .views-field-field-seats .field-content {
+    display:inline;
+}
+
+.list.workshops h2 {
+    padding-bottom:0px!important;
+
+}
+.list.workshops p {
+    padding-bottom:0 !important;
+    margin-bottom:0;
+    font-size:1em;
+    display:inline;
+}
+
+.views-more-link {
+    display:inline;
+    color:#c33a3a;
+
+}
+
+.reg-btn {
+    background:green;
+    color:white;
+    padding:5px 15px;
+    margin:10px 0;
+    display:inline-block;
+    
+}
+.reg-btn:hover {
+    color:white;
+    background:#337ab7;
+}
+#s-lc-event-desc {
+    display:inline;
+    max-width:750px;
+}
+
+.bef-exposed-form select {
+    padding:2px 5px !important;
+}
+
+.bef-exposed-form label {
+    color:transparent;
+}
+
+.form-type-textfield label {
+    color:#272727;
 }
