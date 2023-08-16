@@ -1516,7 +1516,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-         field_geolocation_latitude:
+        field_geolocation_latitude:
           id: field_geolocation_latitude
           table: node__field_geolocation_latitude
           field: field_geolocation_latitude
