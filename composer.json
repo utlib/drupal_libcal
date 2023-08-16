@@ -19,7 +19,9 @@
         }
     },
     "require": {
-        "drupal/views_simple_math_field": "^3.0"
+        "drupal/views_simple_math_field": "^3.0",
+        "drupal/better_exposed_filters": "^6.0"
+
     },
     "require-dev": {
         "phpunit/phpunit": "^8",
