@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: libcal_card_date
+label: 'libcal card date'
+locked: false
+pattern: 'j M'
