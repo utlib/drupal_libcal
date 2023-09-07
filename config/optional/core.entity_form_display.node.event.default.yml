@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_campus
     - field.field.node.event.field_end_date
     - field.field.node.event.field_future_dates
+    - field.field.node.event.field_geolocation
     - field.field.node.event.field_geolocation_latitude
     - field.field.node.event.field_geolocation_longitude
     - field.field.node.event.field_geolocation_place_id
@@ -29,7 +30,10 @@ dependencies:
   module:
     - datetime
     - path
+    - scheduler
     - text
+_core:
+  default_config_hash: iIUxEZ4u8Jnqp-hhvazpdPSyYXeZhKzmsCAK778DP9k
 id: node.event.default
 targetEntityType: node
 bundle: event
@@ -95,23 +99,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_geolocation_latitude:
-    type: number
-    weight: 23
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_geolocation_longitude:
-    type: number
-    weight: 23
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_geolocation_place_id:
+  field_geolocation:
     type: string_textfield
     weight: 23
     region: content
@@ -231,6 +219,12 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp_no_default
+    weight: 29
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 7
@@ -263,9 +257,18 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   url_redirects:
     weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_geolocation_latitude: true
+  field_geolocation_longitude: true
+  field_geolocation_place_id: true

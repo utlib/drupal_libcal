@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: workshop_events_libcal_
+label: 'Workshop events (libcal)'
+type: 'canonical_entities:node'
+pattern: '/workshop-events/[node:nid]/[node:title]'
+selection_criteria:
+  438734ef-7e23-408c-b827-3b4840f860d1:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 438734ef-7e23-408c-b827-3b4840f860d1
+    context_mapping:
+      node: node
+    bundles:
+      event: event
+selection_logic: and
+weight: -5
+relationships: {  }

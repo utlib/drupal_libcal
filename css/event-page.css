@@ -118,17 +118,44 @@ body.node--type-event .node__content .field .field__label::after {
 }
 
 .reg-btn {
-    background:green;
-    color:white;
+    margin:15px 0;
+    display:block;
+}
+.workshop-full a {
+    color:black;
     padding:5px 15px;
     margin:10px 0;
     display:inline-block;
-    
+    background:lightyellow;
 }
-.reg-btn:hover {
+
+.reg-btn a {
+    color:white;
+    margin:10px 0;
+    display:inline-block;
+
+  
+}
+.reg-btn a:hover span, .workshop-full a:hover {
     color:white;
     background:#337ab7;
 }
+
+.yellow {
+    background:lightyellow;
+    color:black;
+    padding:5px 15px; 
+
+}
+
+.green {
+    background:green;
+    color:white;
+    padding:5px 15px; 
+
+}
+
+
 #s-lc-event-desc {
     display:inline;
     max-width:750px;
@@ -144,4 +171,39 @@ body.node--type-event .node__content .field .field__label::after {
 
 .form-type-textfield label {
     color:#272727;
+}
+
+.node--type-event {
+    .row {
+        margin-left:0;
+    }
+    .view-header {
+        width:100%;
+        float:left;
+        display:block;
+    }
+    .more-link {
+        float:right !important;
+        display:block;
+        clear:both !important;
+        background:#002a5c !important;
+        color:white;
+   }
+
+   .more-link:hover {
+        background:#337ab7 !important;        
+   }
+
+   .views-field-body p {
+    margin-bottom:5px !important;
+   }
+
+   .views-field-body ul {
+     margin-bottom: 5px !important;
+     font-size:1em !important;
+   }
+   .views-field-body h4 {
+    padding:5px 0 !important;
+    margin:2.5px 0 !important;
+   }
 }

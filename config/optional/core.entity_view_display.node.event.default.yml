@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.event.field_campus
     - field.field.node.event.field_end_date
     - field.field.node.event.field_future_dates
+    - field.field.node.event.field_geolocation
     - field.field.node.event.field_geolocation_latitude
     - field.field.node.event.field_geolocation_longitude
     - field.field.node.event.field_geolocation_place_id
@@ -27,212 +28,57 @@ dependencies:
     - field.field.node.event.field_wait_list
     - node.type.event
   module:
-    - datetime
-    - text
+    - ds
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - 'dynamic_block_field:node-workshops_detail_block'
+    fields:
+      'dynamic_block_field:node-workshops_detail_block':
+        plugin_id: 'dynamic_block_field:node-workshops_detail_block'
+        weight: 0
+        label: hidden
+        formatter: default
+_core:
+  default_config_hash: jNZoWfDCuDIyW2U2mkNJDDvVKnbo2lmoyJV0piHRiIg
 id: node.event.default
 targetEntityType: node
 bundle: event
 mode: default
-content:
-  body:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  field_all_day:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 12
-    region: content
-  field_calendar_id:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 20
-    region: content
-  field_calendar_name:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 19
-    region: content
-  field_campus:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 18
-    region: content
-  field_end_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 1
-    region: content
-  field_future_dates:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 17
-    region: content
-  field_geolocation_latitude:
-    type: number_decimal
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 16
-    region: content
-  field_geolocation_longitude:
-    type: number_decimal
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 16
-    region: content
-  field_geolocation_place_id:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 16
-    region: content
-  field_libcal_categories:
-    type: entity_reference_label
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    weight: 15
-    region: content
-  field_libcal_color:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 14
-    region: content
-  field_libcal_featured_image:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 13
-    region: content
-  field_libcal_id:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 11
-    region: content
-  field_libcal_url:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 3
-    region: content
-  field_location:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 10
-    region: content
-  field_past_event:
-    type: boolean
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    weight: 9
-    region: content
-  field_presenter:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    weight: 8
-    region: content
-  field_registration:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 7
-    region: content
-  field_seats:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 6
-    region: content
-  field_seats_taken:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 5
-    region: content
-  field_start_date:
-    type: datetime_default
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: medium
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_wait_list:
-    type: number_integer
-    label: above
-    settings:
-      thousand_separator: ''
-      prefix_suffix: true
-    third_party_settings: {  }
-    weight: 4
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 21
-    region: content
+content: {  }
 hidden:
+  body: true
+  field_all_day: true
+  field_calendar_id: true
+  field_calendar_name: true
+  field_campus: true
+  field_end_date: true
+  field_future_dates: true
+  field_geolocation: true
+  field_geolocation_latitude: true
+  field_geolocation_longitude: true
+  field_geolocation_place_id: true
+  field_libcal_categories: true
+  field_libcal_color: true
+  field_libcal_featured_image: true
+  field_libcal_id: true
+  field_libcal_url: true
+  field_location: true
+  field_past_event: true
+  field_presenter: true
+  field_registration: true
+  field_seats: true
+  field_seats_taken: true
+  field_start_date: true
+  field_wait_list: true
+  links: true
   search_api_excerpt: true
