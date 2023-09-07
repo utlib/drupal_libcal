@@ -39,6 +39,8 @@ body.node--type-event .node__content .field .field__label::after {
 .block-views-blockworkshop-events-block-1 .list h3{
     padding: 10px 0;
     margin: 0;
+    font-size:1.15em;
+
 }
 
 .block-views-blockworkshop-events-block-1 .list h3 a {
@@ -57,7 +59,7 @@ body.node--type-event .node__content .field .field__label::after {
     background:#c33a3a;
     float:left;
     width:85px;
-    height:85px;
+    height:80px;
     text-align:center;
     margin-right:20px;
     

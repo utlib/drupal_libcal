@@ -467,7 +467,7 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: true
+            make_link: false
             path: '/workshop-events/full/{{ nid }}'
             absolute: false
             external: false
@@ -506,7 +506,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -839,7 +839,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 4
+          items_per_page: 5
       filters:
         status:
           id: status
@@ -2279,7 +2279,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/workshop-events" class="more-link">View more workshops.</a>'
+            value: '<a href="/workshop-events" class="more-link">View more workshops</a>'
             format: full_html
           tokenize: false
       display_extenders:
