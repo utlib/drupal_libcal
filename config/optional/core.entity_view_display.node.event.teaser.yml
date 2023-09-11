@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.event.field_calendar_name
     - field.field.node.event.field_campus
     - field.field.node.event.field_end_date
-    - field.field.node.event.field_libcal_featured_image
     - field.field.node.event.field_future_dates
     - field.field.node.event.field_geolocation_latitude
     - field.field.node.event.field_geolocation_longitude
