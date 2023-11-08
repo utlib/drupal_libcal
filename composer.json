@@ -58,5 +58,10 @@
             "./vendor/bin/phpcs --standard=Drupal --ignore=*.md,vendor --extensions=php,module,inc,install,test,profile,theme,css,info .",
             "./vendor/bin/phpcpd --names='*.module,*.inc,*.test,*.php' --exclude=vendor ."
         ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     }
 }
