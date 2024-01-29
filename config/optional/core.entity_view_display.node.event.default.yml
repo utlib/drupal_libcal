@@ -41,13 +41,25 @@ third_party_settings:
         label: ''
     regions:
       content:
+        - node_title
         - 'dynamic_block_field:node-workshops_detail_block'
     fields:
       'dynamic_block_field:node-workshops_detail_block':
         plugin_id: 'dynamic_block_field:node-workshops_detail_block'
+        weight: 1
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
         weight: 0
         label: hidden
         formatter: default
+        settings:
+          link: false
+          'link class': ''
+          link_target: ''
+          wrapper: h2
+          class: hide-field
 _core:
   default_config_hash: jNZoWfDCuDIyW2U2mkNJDDvVKnbo2lmoyJV0piHRiIg
 id: node.event.default
