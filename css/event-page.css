@@ -209,3 +209,7 @@ body.node--type-event .node__content .field .field__label::after {
     margin:2.5px 0 !important;
    }
 }
+
+.hide-field {
+    display:none;
+}
