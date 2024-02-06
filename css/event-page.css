@@ -213,3 +213,7 @@ body.node--type-event .node__content .field .field__label::after {
 .hide-field {
     display:none;
 }
+
+.list.workshops .views-field-body p {
+    display:block;
+}
