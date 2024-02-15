@@ -98,6 +98,10 @@ body.node--type-event .node__content .field .field__label::after {
     display:inline;
 }
 
+.view-workshop-events select {
+    margin:0;
+}
+
 .views-field-field-libcal-categories .field-content, .views-field-field-seats .field-content {
     display:inline;
 }
@@ -216,4 +220,8 @@ body.node--type-event .node__content .field .field__label::after {
 
 .list.workshops .views-field-body p {
     display:block;
+}
+
+.view-footer .more-link {
+    padding: 3px 10px;
 }
